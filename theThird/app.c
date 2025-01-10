@@ -23,8 +23,18 @@ void main(void) {
     //1. add a new player. considering: ID[number], current name [string], current coins (money), and status [boolean]
     players_add_player(1, "valmor"); //function doesn't exist, we need to create.
     players_add_player(2, "second-valmor");
-    //2. removing a player
-    players_remove_player(1);
-    //3. list (print) the existing players.
+    // listing. expected valmor and second-valmor.
     players_print_list();
+
+    players_remove_player(1);   //removing valmor
+
+    players_print_list(); //expected to see second-valmor.
+
+    players_add_player(3, "third-valmor");
+    players_add_player(4, "fourth-valmor");
+    players_print_list();   //expected to see second, third and fourth valmor ;)
+
+    players_remove_player(2); // removing second-valmor, it's id is 2.
+    players_print_list();   // expected to see third and fourth valmor.
+    
 }
