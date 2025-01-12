@@ -1,7 +1,6 @@
-# code-with-valmor
+# Welcome to code-with-valmor!
 
 Hello! Hello!
-Welcome to code with Valmor!
 
 Here is where I'll be uploading the code I'm creating for the youtube channel.
 
